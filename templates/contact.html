@@ -53,8 +53,10 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
+                    <form class="row contact_form" action="{% url 'contact_form' %}" method="post" id="contactForm"
                           novalidate="novalidate">
+
+                        {% csrf_token %}
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="name" name="name"
@@ -84,6 +86,20 @@
         </div>
     </section>
     <!--================Contact Area =================-->
+    <!--================Contact Success and Error message Area =================-->
+    <div id="success" class="modal modal-message fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h2>Thank you</h2>
+                    <p>Your message is successfully sent...</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modals error -->
 
@@ -102,6 +118,7 @@
     </div>
     <!--================End Contact Success and Error message Area =================-->
 {% endblock %}
+
 {% block extra_scripts %}
     <!-- contact js -->
     <script src="{% static 'js/jquery.form.js' %}"></script>
