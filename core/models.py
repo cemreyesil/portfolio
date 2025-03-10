@@ -2,6 +2,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 from portfolio_cemre.custom_storage import ImageSettingStorage, DocumentStorage, MediaStorage
 
+
 # Create your models here.
 
 class AbstractModel(models.Model):
@@ -18,6 +19,7 @@ class AbstractModel(models.Model):
 
     class Meta:
         abstract = True
+
 
 class GeneralSetting(AbstractModel):
     name = models.CharField(
@@ -55,6 +57,7 @@ class GeneralSetting(AbstractModel):
         verbose_name = 'General Setting'
         verbose_name_plural = 'General Settings'
         ordering = ('name',)
+
 
 class ImageSetting(AbstractModel):
     name = models.CharField(
@@ -242,6 +245,7 @@ class SocialMedia(AbstractModel):
         verbose_name_plural = 'Social Medias'
         ordering = ('order',)
 
+
 class Project(AbstractModel):
     order = models.IntegerField(
         default=0,
@@ -265,7 +269,7 @@ class Project(AbstractModel):
         verbose_name='Image',
         help_text='',
         blank=True,
-        storage=MediaStorage(),
+        storage=ImageSettingStorage(),
     )
     link = models.URLField(
         default='',
