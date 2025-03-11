@@ -11,6 +11,7 @@
                             <img class="home_banner_photo" src=" {{ home_banner_photo.url }} " alt=""
                                  style="border-radius: 1%;">
                         </div>
+
                         <div class="media-body">
                             <div class="personal_text">
                                 <h6>Hello Everybody, i am</h6>
@@ -184,13 +185,13 @@
                 {% endfor %}
             </div>
             <div class="more_btn">
-                <a class="main_btn" href="#">Load More Items</a>
+                <a class="main_btn" href="{% url 'projects' %}">Load More Items</a>
             </div>
         </div>
     </section>
     <!--================End Home Gallery Area =================-->
 
-    <!--================Testimonials Area =================-->
+    <!--================Testimonials Area =================
     <section class="testimonials_area p_120">
         <div class="container">
             <div class="main_title">
@@ -240,6 +241,6 @@
             </div>
         </div>
     </section>
-    <!--================End Testimonials Area =================-->
+    ================End Testimonials Area =================-->
 
 {% endblock %}

@@ -4,107 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996d81fd-167b-4397-8028-f4b4badc7fc6" name="Changes" comment="feat: update storage settings for local and S3 configurations">
+    <list default="true" id="996d81fd-167b-4397-8028-f4b4badc7fc6" name="Changes" comment="feat: create new projects site">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/banner/banner-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/banner/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/banner/home-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/banner/shap-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/banner/shap-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/add.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/author.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/c2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/c3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/c4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/c5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/c6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/cat-post/cat-post-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/cat-post/cat-post-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/cat-post/cat-post-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/causes/causes-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/causes/causes-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/causes/causes-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/feature-img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/main-blog/m-blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/main-blog/m-blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/main-blog/m-blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/main-blog/m-blog-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/main-blog/m-blog-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/next.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/popular-post/post1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/popular-post/post2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/popular-post/post3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/popular-post/post4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/post-img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/post-img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/blog/prev.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/_DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/a2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/disabled-check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/disabled-radio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/f1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/f3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/f4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/f5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/f6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/f7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/f8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/g1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/g2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/g3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/g4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/g5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/g6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/g7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/g8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/primary-check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/primary-radio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/success-check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/success-radio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/user1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/elements/user2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/gallery/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/gallery/portfolio_details.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/gallery/project-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/gallery/project-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/gallery/project-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/gallery/project-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/gallery/project-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/gallery/project-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/Image-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/Image-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/Image-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/Image-04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/Image-05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/Image-06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/Image-07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/Image-08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/ins-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/ins-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/ins-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/ins-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/ins-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/instagram/ins-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/personal-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/img/personal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_cemre/custom_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_cemre/custom_storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_cemre/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_cemre/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_cemre/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_cemre/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/_price.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/_price.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/head.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
     </list>
     <list id="ce03e727-bee2-4d92-a65a-245d96390df5" name="Changes by cemre" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -298,7 +204,7 @@
       <workItem from="1740758213758" duration="4372000" />
       <workItem from="1740993798819" duration="7293000" />
       <workItem from="1741603519309" duration="5920000" />
-      <workItem from="1741641422225" duration="5419000" />
+      <workItem from="1741641422225" duration="10365000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -420,7 +326,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741000285813</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: enhance project layout and add dynamic content rendering">
+      <option name="closed" value="true" />
+      <created>1741647009726</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741647009726</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: create new projects site">
+      <option name="closed" value="true" />
+      <created>1741647093830</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1741647093830</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,6 +373,8 @@
     <MESSAGE value="feat: add Nginx service" />
     <MESSAGE value="feat: add entrypoint script" />
     <MESSAGE value="feat: update storage settings for local and S3 configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update storage settings for local and S3 configurations" />
+    <MESSAGE value="feat: enhance project layout and add dynamic content rendering" />
+    <MESSAGE value="feat: create new projects site" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create new projects site" />
   </component>
 </project>

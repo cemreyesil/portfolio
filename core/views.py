@@ -41,7 +41,7 @@ def layout(request):
     home_banner_email = get_general_setting('home_banner_email')
     home_banner_location = get_general_setting('home_banner_location')
     about_myself_welcome = get_general_setting_text('about_myself_welcome')
-    about_myself_footer = get_general_setting('about_myself_footer')
+    about_myself_footer = get_general_setting_text('about_myself_footer')
 
     # Images
     navbar_logo = get_image_setting('logo')
