@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from core.models import GeneralSetting, ImageSetting, Skill, Experience, Education, SocialMedia, Project, Document
+from core.models import GeneralSetting, ImageSetting, Skill, Experience, Education, SocialMedia, Project, Testimonial, \
+    Document
+
 
 # Create your views here.
 
@@ -10,6 +12,8 @@ def get_general_setting_text(parameter):
         obj = ''
 
     return obj
+
+
 def get_general_setting(parameter):
     try:
         obj = GeneralSetting.objects.get(name=parameter).parameter
@@ -17,6 +21,7 @@ def get_general_setting(parameter):
         obj = ''
 
     return obj
+
 
 def get_image_setting(parameter):
     try:
@@ -32,6 +37,8 @@ def layout(request):
     site_keywords = get_general_setting('site_keywords')
     site_description = get_general_setting('site_description')
     site_author = get_general_setting('site_author')
+
+    # General Settings
     home_banner_name = get_general_setting('home_banner_name')
     home_banner_title = get_general_setting('home_banner_title')
     home_banner_description = get_general_setting('home_banner_description')
@@ -46,7 +53,6 @@ def layout(request):
     # Images
     navbar_logo = get_image_setting('logo')
     favicon = get_image_setting('favicon')
-
 
     # Social Media
     social_medias = SocialMedia.objects.all().order_by('order')
@@ -69,10 +75,11 @@ def layout(request):
         'home_banner_email': home_banner_email,
         'home_banner_location': home_banner_location,
 
+        'about_myself_welcome': about_myself_welcome,
+
         'navbar_logo': navbar_logo,
         'favicon': favicon,
 
-        'about_myself_welcome': about_myself_welcome,
         'about_myself_footer': about_myself_footer,
 
         'social_medias': social_medias,
@@ -83,10 +90,9 @@ def layout(request):
 
 
 def index(request):
-
     context = layout(request)
 
-    #Images
+    # Images
     home_banner_photo = get_image_setting('home_banner_photo')
 
     # Skills
@@ -101,20 +107,29 @@ def index(request):
     # Projects
     projects = Project.objects.all().order_by('order')
 
+    # Testimonials
+    testimonials = Testimonial.objects.all().order_by('order')
+
     context.update({
 
-        'skills': skills,
-        'experiences': experiences,
-        'educations': educations,
         'home_banner_photo': home_banner_photo,
+
+        'skills': skills,
+
+        'experiences': experiences,
+
+        'educations': educations,
+
         'projects': projects,
+
+        'testimonials': testimonials,
 
     })
 
     return render(request, 'index.html', context=context)
 
 
-def projects(request):
+def projectsView(request):
     context = layout(request)
 
     # Projects
@@ -125,6 +140,7 @@ def projects(request):
     })
 
     return render(request, 'projects.html', context=context)
+
 
 def redirect_urls(request, slug):
     doc = get_object_or_404(Document, slug=slug)
