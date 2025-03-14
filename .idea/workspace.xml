@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996d81fd-167b-4397-8028-f4b4badc7fc6" name="Changes" comment="feat: implement contact form with email functionality and dynamic form fields">
+    <list default="true" id="996d81fd-167b-4397-8028-f4b4badc7fc6" name="Changes" comment="feat: update email settings and improve workspace configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio_cemre/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio_cemre/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <list id="ce03e727-bee2-4d92-a65a-245d96390df5" name="Changes by cemre" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +202,7 @@
       <workItem from="1740993798819" duration="7293000" />
       <workItem from="1741603519309" duration="5920000" />
       <workItem from="1741641422225" duration="11004000" />
-      <workItem from="1741963246534" duration="10825000" />
+      <workItem from="1741963246534" duration="10933000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -380,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741987554450</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat: update email settings and improve workspace configuration">
+      <option name="closed" value="true" />
+      <created>1741988457526</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1741988457526</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,6 +426,7 @@
     <MESSAGE value="feat: implement dynamic testimonials section with star rating" />
     <MESSAGE value="feat: add Message model and admin interface for contact form submissions" />
     <MESSAGE value="feat: implement contact form with email functionality and dynamic form fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implement contact form with email functionality and dynamic form fields" />
+    <MESSAGE value="feat: update email settings and improve workspace configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update email settings and improve workspace configuration" />
   </component>
 </project>
