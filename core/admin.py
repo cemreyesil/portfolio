@@ -74,7 +74,14 @@ class ProjectAdmin(admin.ModelAdmin):
     class Meta:
         model = Project
 
+@admin.register(Testimonial)
+class TestimonialAdmin(admin.ModelAdmin):
+    list_display = ['id', 'order', 'name', 'description', 'star', 'link', 'updated_date', 'created_date']
+    search_fields = ['name', 'description']
+    list_editable = ['order', 'name', 'description', 'star', 'link']
 
+    class Meta:
+        model = Testimonial
 
 @admin.register(Document)
 class DocumentAdmin(admin.ModelAdmin):

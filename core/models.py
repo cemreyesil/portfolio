@@ -287,6 +287,47 @@ class Project(AbstractModel):
         verbose_name_plural = 'Projects'
         ordering = ('order',)
 
+class Testimonial(AbstractModel):
+    order = models.IntegerField(
+        default=0,
+        verbose_name='Order',
+    )
+    name = models.CharField(
+        default='',
+        max_length=254,
+        blank=True,
+        verbose_name='Name',
+        help_text='',
+    )
+    description = models.TextField(
+        default='',
+        blank=True,
+        verbose_name='Description',
+        help_text='',
+    )
+
+    star = models.IntegerField(
+        default=5,
+        verbose_name='Star',
+        validators=[MinValueValidator(0), MaxValueValidator(10)],
+    )
+
+    link = models.URLField(
+        default='',
+        max_length=254,
+        blank=True,
+    )
+
+    def __str__(self):
+        return f"Testimonial: {self.name}"
+
+    class Meta:
+        verbose_name = 'Testimonial'
+        verbose_name_plural = 'Testimonials'
+        ordering = ('order',)
+
+
+
 
 class Document(AbstractModel):
     order = models.IntegerField(
