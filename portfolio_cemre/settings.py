@@ -126,39 +126,29 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-if not DEBUG:
-    STATIC_URL = '/static/'
-    STATIC_ROOT = BASE_DIR / 'staticfiles'
+AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = env('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_REGION_NAME = env('AWS_S3_REGION_NAME')
 
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = BASE_DIR / 'media'
+DEFAULT_FILE_STORAGE = 'project_name.custom_storage.MediaStorage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-    DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
+AWS_DEFAULT_ACL = 'public-read'
+AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000',
+}
 
-else:
-    AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
-    AWS_STORAGE_BUCKET_NAME = env('AWS_STORAGE_BUCKET_NAME')
-    AWS_S3_REGION_NAME = env('AWS_S3_REGION_NAME')
+STATICFILES_LOCATION = 'static'
+AWS_LOCATION = 'static'
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+STATIC_ROOT = STATIC_URL
 
-    DEFAULT_FILE_STORAGE = 'project_name.custom_storage.MediaStorage'
-    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-    AWS_DEFAULT_ACL = 'public-read'
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
-
-    STATICFILES_LOCATION = 'static'
-    AWS_LOCATION = 'static'
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    STATIC_ROOT = STATIC_URL
-
-    MEDIA_LOCATION = 'media'
-    IMAGE_SETTING_LOCATION = MEDIA_LOCATION + '/image_settings'
-    DOCUMENT_LOCATION = MEDIA_LOCATION + '/documents'
+MEDIA_LOCATION = 'media'
+IMAGE_SETTING_LOCATION = MEDIA_LOCATION + '/image_settings'
+DOCUMENT_LOCATION = MEDIA_LOCATION + '/documents'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
